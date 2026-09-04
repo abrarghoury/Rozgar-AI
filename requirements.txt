@@ -16,7 +16,7 @@ python-dotenv
 audio-recorder-streamlit
 google-genai
 gTTS
-
+qrcode[pil]
 # ---- OPTIONAL — LLM-based extraction (uncomment when API key available) ----
 # anthropic
 # openai
