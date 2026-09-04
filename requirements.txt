@@ -15,6 +15,7 @@ soundfile
 python-dotenv
 audio-recorder-streamlit
 google-genai
+gTTS
 
 # ---- OPTIONAL — LLM-based extraction (uncomment when API key available) ----
 # anthropic
