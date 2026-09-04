@@ -13,6 +13,7 @@ pandas
 ffmpeg-python
 soundfile
 python-dotenv
+audio-recorder-streamlit
 
 # ---- OPTIONAL — LLM-based extraction (uncomment when API key available) ----
 # anthropic
