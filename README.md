@@ -295,12 +295,13 @@ streamlit run app.py
 - [x] Weighted, category-aware matching engine
 - [x] Editable profile cards + masked phone numbers
 - [x] Pure Urdu-script interface
-- [ ] Apply / Save / Call / WhatsApp action buttons
-- [ ] "Turant Chahiye" urgent badge + applicant counter
-- [ ] Text-to-speech "Suniye" listing playback
-- [ ] QR code printable flyers for offline reach
-- [ ] Related-skills scoring tier (e.g. Electrician ↔ AC Technician)
+- [x] Apply / Save / Call / WhatsApp action buttons
+- [x] applicant counter
+- [x] Text-to-speech "Suniye" listing playback
+- [x] QR code printable flyers for offline reach
+- [x] Related-skills scoring tier (e.g. Electrician ↔ AC Technician)
 - [ ] Multi-city expansion beyond Karachi
+- [ ] "Turant Chahiye" urgent badge
 
 <br>
 
