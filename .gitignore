@@ -1,0 +1,24 @@
+# Environment variables — NEVER commit, even empty
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Model download caches (Whisper/sentence-transformers auto-download hote hain)
+.cache/
+
+# Streamlit secrets (agar local test ke liye banayi ho)
+.streamlit/secrets.toml
+
+# OS/editor junk
+.DS_Store
+.vscode/
+.idea/
+
+# Future: agar qr_util.py banane ke baad printable flyer images
+# runtime pe generate hon, unka output folder yahan add karein, e.g.:
+# flyers/

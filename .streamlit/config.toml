@@ -1,0 +1,59 @@
+[theme]
+# ---------------------------------------------------------
+# Rozgar AI — Streamlit theme
+# Palette agreed earlier:
+#   Primary (trust/worker side): #0F6B5C  (deep teal-green)
+#   Employer-side accent:        #B5651D  (warm ochre)
+#   Background:                  #FAF8F3  (warm off-white)
+#   Text:                        #1F2421  (warm charcoal, not pure black)
+# Note: Streamlit's built-in [theme] only supports ONE primaryColor
+# globally (no separate worker/employer theme). Primary is set to the
+# teal (worker-side / trust color, used for main buttons, confirm
+# actions). The ochre employer accent is applied manually in app.py
+# via custom CSS on employer-side containers — see notes at bottom.
+# ---------------------------------------------------------
+
+primaryColor = "#0F6B5C"
+backgroundColor = "#FAF8F3"
+secondaryBackgroundColor = "#F0EBE0"
+textColor = "#1F2421"
+font = "sans serif"
+
+[server]
+# Keep uploaded audio files small and demo-safe
+maxUploadSize = 15
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+# ---------------------------------------------------------
+# HOW TO APPLY THE OCHRE EMPLOYER ACCENT (config.toml can't do this
+# alone — add this small CSS block once near the top of app.py):
+#
+#   st.markdown("""
+#       <style>
+#       .employer-accent, .employer-accent button {
+#           border-color: #B5651D !important;
+#           color: #B5651D !important;
+#       }
+#       .worker-accent, .worker-accent button {
+#           border-color: #0F6B5C !important;
+#           color: #0F6B5C !important;
+#       }
+#       .weak-match-tag {
+#           color: #C77B2B !important;
+#           font-weight: 600;
+#       }
+#       .app-error {
+#           color: #B3261E !important;
+#       }
+#       </style>
+#   """, unsafe_allow_html=True)
+#
+# Then wrap employer-side sections/buttons in a div with class
+# "employer-accent" and worker-side ones with "worker-accent".
+# ---------------------------------------------------------
+
+[server]
+fileWatcherType = "none"

@@ -1,0 +1,20 @@
+# =========================================================
+# Rozgar AI — Python Dependencies
+# No pinned versions — pip will auto-select compatible ones
+# Install with: pip install -r requirements.txt
+# =========================================================
+
+streamlit
+faster-whisper
+sentence-transformers
+torch
+numpy
+pandas
+ffmpeg-python
+soundfile
+python-dotenv
+
+# ---- OPTIONAL — LLM-based extraction (uncomment when API key available) ----
+# anthropic
+# openai
+# google-genai
