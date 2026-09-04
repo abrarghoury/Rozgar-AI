@@ -153,13 +153,27 @@ st.markdown(textwrap.dedent(f"""
     border: 1px solid {COLOR_BORDER};
     background: {COLOR_CARD_BG};
 }}
-/* The photo itself - a real <img>, not a CSS background-cover box.
-   width:100% + height:auto means the browser just scales the image
-   proportionally, so the ENTIRE picture is always visible, nothing
-   ever gets cropped off the sides, top, or bottom. */
-.hero-image {{
+/* Fixed-height frame around the photo. object-fit: contain means the
+   FULL image always fits inside this frame (nothing cropped), but the
+   frame itself has a capped height - so on a wide screen the image
+   can't stretch tall and force extra scrolling on the whole dashboard.
+   Any leftover space (if the image is unusually tall/narrow) is just
+   letterboxed in the frame's own background color. */
+.hero-image-frame {{
     width: 100%;
+    height: 260px;
+    background: {COLOR_CARD_BG};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}}
+.hero-image {{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
     height: auto;
+    object-fit: contain;
     display: block;
 }}
 .hero-image-fallback {{
@@ -420,7 +434,7 @@ div.stButton > button[kind="primary"] {{
 # row below that - so the photo always stays fully clean and every
 # text element gets full contrast regardless of what's in the image.
 _hero_image_html = (
-    f'<img class="hero-image" src="{_hero_image_src}" alt="" />'
+    f'<div class="hero-image-frame"><img class="hero-image" src="{_hero_image_src}" alt="" /></div>'
     if _hero_image_src else '<div class="hero-image-fallback"></div>'
 )
 st.markdown(textwrap.dedent(f"""
