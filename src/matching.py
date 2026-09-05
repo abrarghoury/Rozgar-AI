@@ -194,13 +194,35 @@ for _a, _b in _RELATED_SKILL_PAIRS:
 
 
 def get_model():
+    """
+    Load the multilingual sentence-transformer model once and reuse it.
+
+    Streamlit-safe: when running inside Streamlit, this uses
+    st.cache_resource so the model is loaded exactly once per app
+    process (not re-loaded on every rerun/button-click, which is what
+    was making save/search feel slow after deployment). When Streamlit
+    isn't available (e.g. running this file standalone from the
+    command line), it falls back to plain global-variable caching —
+    same pattern used in speech_to_text.py's get_model_cached().
+    """
     global _model
-    if _model is None:
+    try:
+        import streamlit as st
+    except ImportError:
+        if _model is None:
+            from sentence_transformers import SentenceTransformer
+            print(f"[matching] Loading embedding model '{_MODEL_NAME}'...")
+            _model = SentenceTransformer(_MODEL_NAME)
+            print("[matching] Model loaded.")
+        return _model
+
+    @st.cache_resource
+    def _load_cached():
         from sentence_transformers import SentenceTransformer
-        print(f"[matching] Loading embedding model '{_MODEL_NAME}'...")
-        _model = SentenceTransformer(_MODEL_NAME)
-        print("[matching] Model loaded.")
-    return _model
+        print(f"[matching] Loading embedding model '{_MODEL_NAME}' (cached)...")
+        return SentenceTransformer(_MODEL_NAME)
+
+    return _load_cached()
 
 
 def _text_for_embedding(entry: dict) -> str:
