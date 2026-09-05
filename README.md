@@ -122,18 +122,53 @@ Rozgar AI removes every barrier between a skill and a job: no forms, no CV, no E
 
 <div align="center">
 
-| | |
-|:---:|:---:|
-| **🏠 Homepage** | **📝 Step 1 — Name & Phone** |
-| ![Homepage](assets/01-homepage.jpg) | ![Step 1](assets/02-step1-name-phone.jpg) |
-| **🎙️ Voice Recording** | **✅ Profile Created from Voice** |
-| ![Voice Recording](assets/03-voice-recording.jpg) | ![Profile Created](assets/04-worker-profile-created.jpg) |
-| **🎯 Weighted Matching Results** | **📊 Live Market Stats** |
-| ![Matching Results](assets/05-matching-results.jpg) | ![Dashboard Stats](assets/06-dashboard-stats.jpg) |
+### 🏠 Homepage
 
-**📲 Offline Reach — QR Code + WhatsApp Share**
+<img src="assets/01-homepage.jpg" width="420"/>
 
-<img src="assets/07-share-qr-whatsapp.jpg" width="320"/>
+<br><br>
+
+### 🚶 The Journey — From Voice to Profile
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="assets/02-step1-name-phone.jpg" width="230"/>
+<br><sub><b>1. Name & Phone</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="assets/03-voice-recording.jpg" width="230"/>
+<br><sub><b>2. Speak Your Details</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="assets/04-worker-profile-created.jpg" width="230"/>
+<br><sub><b>3. Profile Auto-Created</b></sub>
+</td>
+</tr>
+</table>
+
+<br>
+
+### 🎯 Weighted Matching in Action
+
+<img src="assets/05-matching-results.jpg" width="450"/>
+
+<br><br>
+
+### 📊 Live Stats &nbsp;·&nbsp; 📲 Offline Reach
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="assets/06-dashboard-stats.jpg" width="260"/>
+<br><sub><b>Market Stats Dashboard</b></sub>
+</td>
+<td align="center" width="50%">
+<img src="assets/07-share-qr-whatsapp.jpg" width="260"/>
+<br><sub><b>QR Code + WhatsApp Share</b></sub>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -261,7 +296,14 @@ Rozgar-AI/
 │   └── employers.json
 │
 ├── 🖼️ assets/
-│   └── Background.png           # README hero illustration
+│   ├── Background.png            # README hero illustration
+│   ├── 01-homepage.jpg           # Screenshot — homepage
+│   ├── 02-step1-name-phone.jpg   # Screenshot — onboarding step 1
+│   ├── 03-voice-recording.jpg    # Screenshot — voice recording screen
+│   ├── 04-worker-profile-created.jpg  # Screenshot — profile auto-created
+│   ├── 05-matching-results.jpg   # Screenshot — weighted matching results
+│   ├── 06-dashboard-stats.jpg    # Screenshot — live market stats
+│   └── 07-share-qr-whatsapp.jpg  # Screenshot — QR code + WhatsApp share
 │
 ├── .env.example                 # Template — copy to .env and add your Gemini key
 ├── .gitignore
