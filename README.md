@@ -25,6 +25,21 @@
 ![Language](https://img.shields.io/badge/UI_Language-Pure_Urdu-2E8B57?style=flat-square)
 ![Cost](https://img.shields.io/badge/Offline_Fallback-Available-success?style=flat-square)
 
+<br>
+
+[![Repo Size](https://img.shields.io/github/repo-size/abrarghoury/Rozgar-AI?style=flat-square&color=blueviolet)](https://github.com/abrarghoury/Rozgar-AI)
+[![Last Commit](https://img.shields.io/github/last-commit/abrarghoury/Rozgar-AI?style=flat-square&color=orange)](https://github.com/abrarghoury/Rozgar-AI)
+[![Stars](https://img.shields.io/github/stars/abrarghoury/Rozgar-AI?style=flat-square&color=yellow)](https://github.com/abrarghoury/Rozgar-AI/stargazers)
+[![Issues](https://img.shields.io/github/issues/abrarghoury/Rozgar-AI?style=flat-square&color=red)](https://github.com/abrarghoury/Rozgar-AI/issues)
+
+<br>
+
+### 🔗 [**🎙️ Launch Live App →**](https://rozgar-ai.streamlit.app/)
+
+📍 **City:** Karachi, Pakistan &nbsp;·&nbsp; 🗣️ **Language:** Pure Urdu &nbsp;·&nbsp; 🧠 **Engine:** Gemini + Rule-Based Fallback &nbsp;·&nbsp; 🎧 **Input:** Voice Only
+
+<br>
+
 ![Rozgar AI — voice connects worker and employer](assets/Background.png)
 
 </div>
@@ -70,6 +85,8 @@
 
 ### 🎙️ *Bol kar profile banti hai. Bol kar job milti hai. Bas itna hi.* 🎙️
 
+**[👉 Try it live right now](https://rozgar-ai.streamlit.app/)** — no signup, no typing, just press record.
+
 </div>
 
 <br>
@@ -98,6 +115,27 @@ Rozgar AI removes every barrier between a skill and a job: no forms, no CV, no E
 <td align="center" width="25%">💰<br><b>Honest Rate Display</b><br><sub>Free-text pay info — never forced into a number</sub></td>
 </tr>
 </table>
+
+<br>
+
+## 🖼️ Screenshots
+
+<div align="center">
+
+| | |
+|:---:|:---:|
+| **🏠 Homepage** | **📝 Step 1 — Name & Phone** |
+| ![Homepage](assets/01-homepage.jpg) | ![Step 1](assets/02-step1-name-phone.jpg) |
+| **🎙️ Voice Recording** | **✅ Profile Created from Voice** |
+| ![Voice Recording](assets/03-voice-recording.jpg) | ![Profile Created](assets/04-worker-profile-created.jpg) |
+| **🎯 Weighted Matching Results** | **📊 Live Market Stats** |
+| ![Matching Results](assets/05-matching-results.jpg) | ![Dashboard Stats](assets/06-dashboard-stats.jpg) |
+
+**📲 Offline Reach — QR Code + WhatsApp Share**
+
+<img src="assets/07-share-qr-whatsapp.jpg" width="320"/>
+
+</div>
 
 <br>
 
@@ -286,6 +324,8 @@ python generate_seed_data.py
 streamlit run app.py
 ```
 
+> 🌐 Prefer not to install anything? **[Just use the hosted version →](https://rozgar-ai.streamlit.app/)**
+
 <br>
 
 ## 🗺️ Roadmap
@@ -296,7 +336,7 @@ streamlit run app.py
 - [x] Editable profile cards + masked phone numbers
 - [x] Pure Urdu-script interface
 - [x] Apply / Save / Call / WhatsApp action buttons
-- [x] applicant counter
+- [x] Applicant counter
 - [x] Text-to-speech "Suniye" listing playback
 - [x] QR code printable flyers for offline reach
 - [x] Related-skills scoring tier (e.g. Electrician ↔ AC Technician)
@@ -338,5 +378,9 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 *Built with ❤️ using Python, OpenAI Whisper, Google Gemini, and Streamlit*
 
 **⭐ Agar ye project pasand aaye to repo ko star zaroor karein! ⭐**
+
+<br>
+
+### 🔗 [**🎙️ Launch Live App →**](https://rozgar-ai.streamlit.app/)
 
 </div>
